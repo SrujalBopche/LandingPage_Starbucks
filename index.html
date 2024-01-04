@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Ubuntu&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+
+        }
+
+        section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            width: 100%;
+            min-height: 100vh;
+            /* margin-bottom: -10px; */
+        }
+
+        header {
+            box-shadow: 2px 2px 2px 2px rgb(176, 173, 173);
+            padding: 20px 100px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            position: relative;
+            max-width: 80px;
+            cursor: pointer;
+        }
+
+        .navbar {
+            margin-bottom: 20px;
+        }
+
+        .navbar ul li {
+            display: inline-block;
+            padding: 0px 30px;
+            margin-right: 20px;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+        }
+
+        .navbar li:hover {
+            color: rgb(0, 0, 0);
+            transition: 0.7s;
+            background-color: rgb(81, 148, 136);
+            border-radius: 10px;
+        }
+
+        .info {
+            position: absolute;
+            top: 200px;
+            left: 10px;
+            max-width: 900px;
+            font-size: 1.1em;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        span {
+            color: #017143;
+            font-size: 1.5em;
+            font-weight: 800;
+
+        }
+
+        .imgs {
+            filter: drop-shadow(10px 1px 12px #017143);
+            cursor: pointer;
+        }
+
+        .placeoreder {
+
+            height: 250px;
+            width: 700px;
+            position: relative;
+            left: 500px;
+            border-radius: 30px;
+            background-color: #bacdc3;
+
+        }
+
+        .txt-1 {
+            padding: 20px;
+            text-transform: uppercase;
+            font-size: 30px;
+            font-weight: bold;
+            color: #008d52;
+        }
+
+        .btn {
+            font-size: 20px;
+            border: 4px solid rgb(72, 69, 69);
+            padding: 2px;
+            margin: 2px 60px;
+            display: inline-block;
+            border-radius: 20px;
+            text-align: center;
+            background-color: rgb(72, 69, 69);
+            color: #bacdc3;
+            cursor: pointer;
+        }
+
+        .container {
+            min-width: 400px;
+            box-shadow: 4px 4px 4px rgb(64, 64, 64);
+        }
+
+        .item {
+
+            position: relative;
+            bottom: 200px;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 50px 40px;
+            padding: 5px;
+        }
+
+        .item img {
+            border-radius: 20px;
+            width: 450px;
+            height: 200px;
+        }
+
+        .txt-2 {
+            text-align: center;
+            font-size: 20px;
+        }
+
+        .btn-2 {
+            border: 3px solid green;
+            display: inline-block;
+            padding: 3px;
+            margin-left: 280px;
+            border-radius: 10px;
+            background-color: #008d52;
+            box-shadow: 2px 2px 2px #008d52;
+            cursor: pointer;
+        }
+
+        .contact img {
+            padding: 0px 40px;
+            display: inline-block;
+            position: relative;
+            left: 600px;
+            cursor: pointer;
+
+        }
+
+        .item-d{
+           border-radius: 20px;
+            background-color:#76af97;
+            padding: 30px 0px;
+        }
+    </style>
+</head>
+
+
+<!-- Navigation Bar And Logo -->
+<body>
+    <section>
+        <header>
+            <img src="img/Logo.png" class="logo">
+            <nav>
+                <div class="navbar">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">More</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    </section>
+
+
+    <!-- Discription -->
+    <div class="info">
+        <div class="imgs">
+            <img src="img/Pic-1.png">
+        </div>
+        <div class="txt">
+            <h1>Where Passion for Coffee Meets Pure Inspiration....!
+                It's<span> Starbucks</span>
+            </h1>
+        </div>
+        <div class="placeoreder">
+            <div class="txt-1"> Order ! Sip ! Smile ! Repeat..!</div>
+            <span class="btn">Place Order</span>
+        </div>
+    </div>
+
+
+    <!-- Coffe Items -->
+    <div class="container">
+        <div class="item">
+            <div  class="item-d">
+                <img src="img/im1.webp">
+                <div class="txt-2">Mocha Cookie Crumble Latte </div>
+                RS .416 Only
+                <div class="btn-2">
+                    + Add
+                </div>
+
+            </div>
+            <div  class="item-d">
+                <img src="img/im2.webp">
+                <div class="txt-2">Mocha Cookie Crumble Latte </div>
+                RS .416 Only
+                <div class="btn-2">
+                    + Add
+                </div>
+            </div>
+            <div class="item-d">
+                <img src="img/im3.webp">
+                <div class="txt-2">Mocha Cookie Crumble Latte </div>
+                RS .416 Only
+                <div class="btn-2">
+                    + Add
+                </div>
+            </div>
+
+        </div>
+        <div class="item">
+            <div class="item-d">
+                <img src="img/im2.webp" >
+                <div class="txt-2">Mocha Cookie Crumble Latte </div>
+                RS .416 Only
+                <div class="btn-2">
+                    + Add
+                </div>
+            </div>
+            <div class="item-d">
+                <img src="img/im3.webp" >
+                <div class="txt-2">Mocha Cookie Crumble Latte </div>
+                RS .416 Only
+                <div class="btn-2">
+                    + Add
+                </div>
+            </div>
+            <div class="item-d">
+                <img src="img/im1.webp" >
+                <div class="txt-2">Mocha Cookie Crumble Latte </div>
+                RS .416 Only
+                <div class="btn-2">
+                    + Add
+                </div>
+            </div>
+
+        </div>
+        <div class="item">
+            <div class="item-d">
+                <img src="img/im3.webp" >
+                <div class="txt-2">Mocha Cookie Crumble Latte </div>
+                RS .416 Only
+                <div class="btn-2">
+                    + Add
+                </div>
+            </div>
+            <div class="item-d">
+                <img src="img/im1.webp" >
+                <div class="txt-2">Mocha Cookie Crumble Latte </div>
+                RS .416 Only
+                <div class="btn-2">
+                    + Add
+                </div>
+            </div>
+            <div class="item-d">
+                <img src="img/im2.webp" >
+                <div class="txt-2">Mocha Cookie Crumble Latte </div>
+                RS .416 Only
+                <div class="btn-2">
+                    + Add
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Social Network Lolos -->
+    <div class="contact">
+        <a href="https://instagram.com" target="_blank"><img src="img/instagram.png"></a>
+        <a href="https://twitter.com" target="_blank"><img src="img/twitter.png"></a>
+        <a href="https://facebook.com" target="_blank"><img src="img/facebook.png"></a>
+    </div>
+
+
+</body>
+
+</html>
